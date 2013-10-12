@@ -18,7 +18,7 @@ which are low-touch and low-risk for node administrators.
 Outgoing Requests
 =================
 
-Any normal HTTP GET or POST request may be properly formatted as a
+Any normal HTTPS GET or POST request may be properly formatted as a
 PLATE request without disturbing any other processing that a web
 server is likely to perform on a request.
 
@@ -43,7 +43,7 @@ Once decrypted, the value of the PLATE field contains either:
 
 or
 
-* a tuple consisting of a URL, a request method (GET or POST), HTTP
+* a tuple consisting of a URL, a request method (GET or POST), HTTPS
   header fields (and values), a request body, and a public key. This
   is essentially enough inforation to create a GET or POST request to
   the world outside the PLATE network, and enrypt the response for the
@@ -55,12 +55,12 @@ passed on to another PLATE server. This does spread knowledge of the
 user's original request around to other exit nodes, so might not be
 desirable.
 
-The response that a server gives to the underlying HTTP request does
+The response that a server gives to the underlying HTTPS request does
 not change when the request is "really" a PLATE request. Instead, the
 request is placed on an internal queue and the request is either
 passed on to another PLATE server, or the URL is accessed
 directly. The webserver hosting the PLATE implementation should generate
-a reasonable HTTP response in some fashion.
+a reasonable HTTPS response in some fashion.
 
 
 
