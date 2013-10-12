@@ -2,7 +2,7 @@ OPA: Onion Plugin for Apache
 ============================
 
 OPA is an onion router supplied as an Apache module. It is separate
-from, but may eventually interoperate with, the TOR network.
+from, but may eventually interoperate with, the Tor network.
 
 Traffic to and from OPA uses the PLATE protocol, which looks like
 regular GET and POST web requests. It is impossible to prove from the

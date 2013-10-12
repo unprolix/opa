@@ -8,7 +8,7 @@ for Latent Anonymous Transmission of Envelopes*.
 Right now this is just a sketch of the protocol; we'll expand it on an
 ongoing basis.
 
-This design owes much to the TOR project, in which many of these ideas
+This design owes much to the Tor project, in which many of these ideas
 originated or at least were popularized. As far as I can tell, the
 innovation here is a kind of useful steganography and deniability,
 coupled with a relatively clear path to getting lots of installations
@@ -49,8 +49,8 @@ or
   the world outside the PLATE network, and enrypt the response for the
   end user.
 
-If the URL refers to a TOR hidden service, and the PLATE server is not
-configured with knowledge of any TOR servers, then the request must be
+If the URL refers to a Tor hidden service, and the PLATE server is not
+configured with knowledge of any Tor servers, then the request must be
 passed on to another PLATE server. This does spread knowledge of the
 user's original request around to other exit nodes, so might not be
 desirable.
